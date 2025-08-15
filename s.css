@@ -1,0 +1,52 @@
+body { 
+  text-align:center; 
+  background:rgb(247, 123, 210); 
+  font-family:sans-serif; 
+  padding-top:50px; 
+  overflow: hidden;
+}
+button { 
+  padding:12px 25px; 
+  margin:10px; 
+  font-size:20px; 
+  cursor:pointer; 
+  transition: transform 0.2s, background 0.2s;
+  background:#ff4081; 
+  color:white; 
+  border:none; 
+  border-radius:8px;
+}
+button:hover { transform: scale(1.1); background:#ff79a6; }
+
+#message { 
+  margin-top:30px; 
+  font-size:26px; 
+  min-height:70px;
+  opacity:0;
+  transition: opacity 1s;
+}
+img { 
+  max-width:350px; 
+  margin-top:20px; 
+  border-radius:15px; 
+  opacity:0;
+  transition: opacity 1s;
+}
+.heart {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url('—Pngtree—heart background in orange symbol_2026055.png') no-repeat center/cover;
+  pointer-events:none;
+  animation: floatUp 6s linear forwards;
+}
+@keyframes floatUp {
+  0% { transform: translateY(0) rotate(0deg); opacity:1; }
+  100% { transform: translateY(-700px) rotate(360deg); opacity:0; }
+}
+canvas { 
+  position: fixed; 
+  top:0; 
+  left:0; 
+  pointer-events:none; 
+}
